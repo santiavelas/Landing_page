@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Santiago Velasquez</title>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="portfolio">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-name">Santiago Velasquez</div>
+    <div class="hero-title">Diseñador & Desarrollador en formación</div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <button class="nav-btn active" onclick="showPage('proyectos', this)">Proyectos</button>
+    <button class="nav-btn" onclick="showPage('sobre', this)">Sobre mí</button>
+    <button class="nav-btn" onclick="showPage('contacto', this)">Contacto</button>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <div class="content">
+
+    <div id="proyectos" class="page active">
+      <h2>Proyectos</h2>
+      <p>Landing page interactiva con navegación dinámica.</p>
+    </div>
+
+    <div id="sobre" class="page">
+      <h2>Sobre mí</h2>
+      <p>Estudiante de Ingeniería Multimedia con enfoque en desarrollo web.</p>
+    </div>
+
+    <div id="contacto" class="page">
+      <h2>Contacto</h2>
+      <p>Email: santiagovelasquezboca@gmail.com</p>
+    </div>
+
+  </div>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button id="scrollTopBtn">↑</button>
+
+</div>
+
+<!-- JS externo -->
+<script src="script.js"></script>
+
+</body>
+</html>

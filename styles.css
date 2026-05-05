@@ -1,0 +1,91 @@
+/* =========================
+   VARIABLES
+========================= */
+:root {
+  --primary: #0a1628;
+  --secondary: #1a4a7a;
+  --accent: #c8912a;
+  --text: #f5e8c8;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  background: var(--primary);
+  color: var(--text);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px;
+  border-bottom: 2px solid var(--accent);
+}
+
+.hero-name {
+  font-size: 40px;
+  color: var(--accent);
+}
+
+.hero-title {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  background: var(--secondary);
+}
+
+.nav-btn {
+  flex: 1;
+  padding: 12px;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.nav-btn.active,
+.nav-btn:hover {
+  background: var(--accent);
+  color: black;
+}
+
+/* CONTENIDO */
+.content {
+  padding: 30px;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/* =========================
+   BOTÓN VOLVER ARRIBA
+========================= */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--accent);
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
